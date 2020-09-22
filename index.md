@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+## Welcome to Blinds for wordpress Page
 
-You can use the [editor on GitHub](https://github.com/Ikennaf1/blinds/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Blinds gives you and your users the option to enable dark mode interface in WordPress blog or website.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Description
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Blinds is a simple light-weight wordpress plugin that gives you and your users the option to enable dark mode interface in your WordPress blog or website. It also works in WordPress admin screens.
 
-# Header 1
-## Header 2
-### Header 3
+### Major features in Blinds include:
 
-- Bulleted
-- List
+- Adds dark mode capability to your WordPress blog or website
+- Does not in any way affect output for paper print.
+- Theme features and functions are maintained.
+- Works for both front-end and admin dashboard.
+- Also works in WordPress multi-site.
 
-1. Numbered
-2. List
+### Frequently Asked Questions:
+* Does it work in WordPress Admin? *
+Yes, Blinds works at the WordPress admin dashboard.
 
-**Bold** and _Italic_ and `Code` text
+* My links appear to be the same color with the dark mode. Why is that? *
+We try as much as possible to not modify most of the properties of your theme. Some of these properties include the color of your links. This means that if your theme's links color is dark, it may not be too contrasting with the dark mode.
 
-[Link](url) and ![Image](src)
 ```
+### Installation
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+1. Upload the Blinds plugin to your blog, activate it.
 
-### Jekyll Themes
+2. You're done!
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ikennaf1/blinds/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Changelog
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+= 0.0.1 =
+*Release Date - 04 September 2020*

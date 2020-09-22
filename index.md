@@ -3,6 +3,7 @@
 Blinds gives you and your users the option to enable dark mode interface in WordPress blog or website.
 
 ### Description
+<img src="https://raw.githubusercontent.com/Ikennaf1/blinds/master/assets/blinds.jpg" alt="blinds logo" title="blinds logo">
 
 Blinds is a simple light-weight wordpress plugin that gives you and your users the option to enable dark mode interface in your WordPress blog or website. It also works in WordPress admin screens.
 

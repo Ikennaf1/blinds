@@ -6,9 +6,9 @@
 
 /**
  * Plugin Name: Blinds
- * Plugin URI: onslaughtdigital.com/blinds
+ * Plugin URI: https://ikennaf1.github.io/blinds/
  * Description: A plugin that enables WordPress end users view a blog or website in night or dark mode
- * Author: Ikenna Felix Isiogu
+ * Author: Ike Felix
  * Version: 0.0.1
  * Author URI: ikennaf1.github.io
  * License: GPLv2 or later
@@ -17,6 +17,12 @@
 /**
  * Runs on activation of the Blinds plugin.
  */
+
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	exit;
+}
+
 function osd_blinds_activation()
 {
     register_activation_hook(__FILE__, 'osd_blinds_activation');
@@ -35,32 +41,31 @@ function osd_blinds_deactivation()
     }
 }
 
-if (!function_exists('osd_blinds_filter')) {
-    /**
-     * The widget (switch or control) position.
-     * @param string $content
-     * @return string
-     */
-    function osd_blinds_widget($content)
-    {
-        $content .= '<div style="position: fixed; top: 3rem; right: 3rem; z-index: 9999999999;" id="osd_blinds_widget_id"></div>';
-        if (is_admin() || is_network_admin()) {
-            echo $content;
-        }
-        return $content;
+function osd_blinds_widget($content)
+{
+    $content .= '<div style="position: fixed; top: 3rem; right: 3rem; z-index: 9999999999;" id="osd_blinds_widget_id"></div>';
+    if (is_admin() || is_network_admin()) {
+        echo $content;
+        return;
+    }
+    return $content;
+}
+
+/**
+ * Hooks the widget (switch or toggle or control) to the WordPress display.
+ */
+function osd_blinds_filter()
+{
+    add_filter('the_content', 'osd_blinds_widget');
+    add_filter('the_excerpt', 'osd_blinds_widget');
+
+    if (is_admin() || is_network_admin()) {
+    add_filter('in_admin_header', 'osd_blinds_widget');
+    return;
     }
 
-    /**
-     * Hooks the widget (switch orcontrol) to the WordPress display.
-     */
-    function osd_blinds_filter()
-    {
-        add_filter('the_content', 'osd_blinds_widget');
-        add_filter('the_excerpt', 'osd_blinds_widget');
-        if (is_admin() || is_network_admin()) {
-            add_filter('in_admin_header', 'osd_blinds_widget');
-        }
-    }
+    echo apply_filters('woocommerce_after_single_product', '<div style="position: fixed; top: 3rem; right: 3rem; z-index: 9999999999;" id="osd_blinds_widget_id"></div>');
+    return;
 }
 
 //wp_enqueue_script('blinds.js', plugins_url('/blinds/blinds.js'), '', filemtime(dirname(__FILE__, 1).'/blinds.js'));

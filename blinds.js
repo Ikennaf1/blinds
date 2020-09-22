@@ -67,13 +67,14 @@ function change_theme_mode() {
         }\
         \
         header, header div,\
-        main, main div,\
+        main, main div, ins, del,\
         table, th, tr, td, table div, table p,\
         article, article div,\
         aside, aside div, form,\
         footer, footer div,\
         h1, h2, h3, h4, h5, h6,\
-        section, p, p div, ul li {\
+        section, p, p div, ul li,\
+        .price, .add_to_cart_button {\
             background-color: #0a0a0a !important;\
             color: #a0a0a0 !important;\
         }\

@@ -15,7 +15,7 @@ Blinds is a simple light-weight wordpress plugin that gives you and your users t
 - Also works in WordPress multi-site.
 
 ### Frequently Asked Questions:
-* Does it work in WordPress Admin? *
+ Does it work in WordPress Admin? 
 Yes, Blinds works at the WordPress admin dashboard.
 
 * My links appear to be the same color with the dark mode. Why is that? *
@@ -29,5 +29,5 @@ We try as much as possible to not modify most of the properties of your theme. S
 
 ### Changelog
 
-= 0.0.1 =
-*Release Date - 04 September 2020*
+*0.0.1*
+Release Date - 04 September 2020

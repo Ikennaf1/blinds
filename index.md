@@ -29,6 +29,12 @@ We try as much as possible to not modify most of the properties of your theme. S
 2. You're done!
 
 ### Changelog
+**0.0.7**
+- Fixed the Category freezing bug
+- Fixed the 'Not a valid JSON response' error.
 
-*0.0.1*
+**0.0.5**
+First stable version
+
+**0.0.1**
 Release Date - 04 September 2020

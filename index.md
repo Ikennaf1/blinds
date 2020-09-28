@@ -34,7 +34,7 @@ We try as much as possible to not modify most of the properties of your theme. S
 - Fixed the 'Not a valid JSON response' error.
 
 **0.0.5**
-First stable version
+- First stable version
 
 **0.0.1**
-Release Date - 04 September 2020
+- Release Date - 04 September 2020

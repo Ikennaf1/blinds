@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blinds plugin</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color: hsl(228, 5%, 20%);
+            scroll-behavior: smooth;
+            font-family: sans-serif;
+        }
+
+        div#blinds_dark_mode_id {
+            color: coral !important;
+        }
+
+        body.body-class {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hsl(228, 45%, 98%);
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .header-text {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: coral;
+            margin: 0rem 0rem 1rem 0rem;
+        }
+        .header-text .header-logo {
+            color: coral;
+        }
+        .header-text h1 {
+            color: coral;
+            margin: 0rem 0rem 0rem 1rem;
+        }
+
+        .content {
+            max-width: 768px;
+            width: 90vw;
+        }
+
+        .body-items {
+            background-color: hsl(0, 0%, 100%);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2rem;
+            border: 1px solid hsl(228, 20%, 95%);
+            border-radius: 0.5rem;
+            box-shadow: hsla(0, 0%, 0%, 0.05) 5px 5px 5px;
+        }
+
+        .content-items {            
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 340px;
+            padding: 1rem;
+            transition: ease 300ms;
+            cursor: pointer;
+            border-radius: 0.5rem;
+        }
+        .content-items:hover {
+            background-color: hsl(228, 10%, 95%);
+        }
+
+        .item-description h4 {
+            font-weight: 600;
+        }
+        .item-description p {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+
+        .item-icon {
+            margin: 0rem 1rem 0rem 0rem;
+        }
+
+        .caption-items {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0.5rem 0rem 0rem 0rem;
+        }
+
+        .caption-item-icon {
+            display: block;
+        }
+
+        .each-caption-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 0.8rem;
+            margin: 0rem 2rem 0rem 0rem;
+        }
+
+        .caption-item-text {
+            margin: 0rem 0rem 0rem 0.5rem;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body class="body-class">
+    <div>
+        <!-- Header -->
+        <div id="blinds_dark_mode_id"
+         class="blinds-icon"
+         style="width: 30px; height: 30px; display: inline-block; position: fixed; top: 20px; right: 20px;"
+        >
+            <!-- Nav -->
+        </div>
+
+        <!-- Body section -->
+        <div>
+            <div class="content">
+                <div class="header-text">
+                    <div class="header-logo" style="width: 3rem; height: 3rem; display: inline-block; color: coral;">
+                        <svg stroke="coral" viewBox="0 0 480 480">
+                            <g id="Layer_1">	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-14.074" y1="24.255" x2="520.825" y2="8.819"/>	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-14.074" y1="110.161" x2="508.074" y2="91.369"/>	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-14.074" y1="190.027" x2="512.101" y2="159.154"/>	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-19.443" y1="273.919" x2="515.456" y2="263.182"/>	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-14.074" y1="344.39" x2="498.678" y2="341.705"/>	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-14.074" y1="463.182" x2="512.101" y2="473.248"/>	
+                                    <line fill="none" stroke-width="25" stroke-linecap="round" stroke-miterlimit="10" x1="-19.443" y1="410.832" x2="508.074" y2="400.094"/>	
+                                    <line fill="none" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="70.792" y1="-11.431" x2="67.914" y2="497.202"/>	
+                                    <line fill="none" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="341.562" y1="-11.431" x2="344.439" y2="492.166"/>	
+                                    <line fill="none" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="377.021" y1="-14.309" x2="379.18" y2="502.957"/>	
+                                    <line fill="none" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="459.288" y1="-14.309" x2="458.568" y2="497.202"/>	
+                                    <line fill="none" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" x1="19.504" y1="-11.431" x2="15.188" y2="492.166"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h1>Blinds</h1>
+                </div>
+
+                <div class="body-items">
+                    <!-- Item 1 -->
+                    <div class="content-items">
+                        <div class="item-icon">qwe</div>
+                        <div class="item-description">
+                            <h4>darkness looms</h4>
+                            <p>What darkness cannot do does not exist walahi</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="content-items">
+                        <div class="item-icon">qwe</div>
+                        <div class="item-description">
+                            <h4>darkness looms</h4>
+                            <p>What darkness cannot do does not exist walahi</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="content-items">
+                        <div class="item-icon">qwe</div>
+                        <div class="item-description">
+                            <h4>darkness looms</h4>
+                            <p>What darkness cannot do does not exist walahi</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="content-items">
+                        <div class="item-icon">qwe</div>
+                        <div class="item-description">
+                            <h4>darkness looms</h4>
+                            <p>What darkness cannot do does not exist walahi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Captions -->
+                <div class="caption-items">
+                    <div class="each-caption-item">
+                        <div class="caption-item-icon" style="width: 0.8rem; height: 0.8rem; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd" d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="caption-item-text">Shop</div>
+                    </div>
+                    <div class="each-caption-item">
+                        <div class="caption-item-icon" style="width: 0.8rem; height: 0.8rem; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path d="M1 8.25a1.25 1.25 0 112.5 0v7.5a1.25 1.25 0 11-2.5 0v-7.5zM11 3V1.7c0-.268.14-.526.395-.607A2 2 0 0114 3c0 .995-.182 1.948-.514 2.826-.204.54.166 1.174.744 1.174h2.52c1.243 0 2.261 1.01 2.146 2.247a23.864 23.864 0 01-1.341 5.974C17.153 16.323 16.072 17 14.9 17h-3.192a3 3 0 01-1.341-.317l-2.734-1.366A3 3 0 006.292 15H5V8h.963c.685 0 1.258-.483 1.612-1.068a4.011 4.011 0 012.166-1.73c.432-.143.853-.386 1.011-.814.16-.432.248-.9.248-1.388z" />
+                            </svg>
+                        </div>
+                        <div class="caption-item-text">Sponsor</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; margin-left: auto;">Build v0.2.0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <div></div>
+    </div>
+<script src="./blinds.min.js" type="module"></script>
+<!-- <script src="./blinds.js" type="text/javascript"></script> -->
+<!-- <script src="./script.js" type="text/javascript"></script> -->
+<script src="./script.js" type="module"></script>
+</body>
+</html>

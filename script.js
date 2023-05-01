@@ -36,6 +36,6 @@ blinds.setBlindsIcons({
 
 blinds.blindsInit();
 
-document.querySelector('#blinds_dark_mode_id').onclick = () => {
+document.querySelector('#blinds_id').onclick = () => {
     blinds.blindsToggle();
 }

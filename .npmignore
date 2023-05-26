@@ -1,3 +1,4 @@
 .GITIGNORE
 index.html
 script.js
+dist

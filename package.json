@@ -1,0 +1,23 @@
+{
+  "name": "blinds",
+  "version": "0.6.0",
+  "description": "A dark mode module for javascript",
+  "main": "blinds.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ikennaf1/blinds.git"
+  },
+  "keywords": [
+    "Dark",
+    "mode"
+  ],
+  "author": "Ikenna Isiogu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ikennaf1/blinds/issues"
+  },
+  "homepage": "https://github.com/Ikennaf1/blinds#readme"
+}

@@ -14,24 +14,29 @@ Blinds is accessible, intuitive, and provides easy way to make a dark mode versi
 
 ### NPM
 1. Open your terminal and move to the root directory of your project.
-
-    `cd project`
+    ```
+    cd project
+    ```
 
 2. Run the following command to install Blinds in your project:
-
-    `npm install blinds`
+    ```
+    npm install blinds
+    ```
 
 3. In your HTML code, create a tag that will hold the toggle icons and give it your prefered style:
-
-    `<div id="blinds_id" style="width: 24px; height: 24px; position: fixed; top: 10px; right: 10px;"><div>`
+    ```
+    <div id="blinds_id" style="width: 24px; height: 24px; position: fixed; top: 10px; right: 10px;"><div>
+    ```
 
 4. Import Blinds in your JavaScript code:
-
-    `import { blindsInit } from './blinds';`
+    ```
+    import { blindsInit } from 'blinds';
+    ```
 
 5. Initialize Blinds by calling the function:
-
-    `blindsInit();`
+    ```
+    blindsInit();
+    ```
 
 6. Activate the toggle function of the icons by adding the event listener:
 
@@ -43,8 +48,9 @@ Blinds is accessible, intuitive, and provides easy way to make a dark mode versi
 
 ### Using script via CDN
 1. Create a tag that will hold the toggle icons and give it your prefered style:
-
-    `<div id="blinds_id" style="width: 24px; height: 24px; position: fixed; top: 10px; right: 10px;"></div>`
+    ```
+    <div id="blinds_id" style="width: 24px; height: 24px; position: fixed; top: 10px; right: 10px;"></div>
+    ```
 
 2. Add Blinds to your HTML through the script tag. Do this preferably just before the closing body tag. The blinds script must be loaded before your script.js (can be named anything really):
 
@@ -55,8 +61,9 @@ Blinds is accessible, intuitive, and provides easy way to make a dark mode versi
     ```
 
 3. In your script.js file, initialize blinds:
-
-    `blindsInit()`
+    ```
+    blindsInit()
+    ```
 
 4. Activate the toggle function of the icons by adding the event listener:
 

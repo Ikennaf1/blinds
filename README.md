@@ -49,7 +49,7 @@ Blinds is accessible, intuitive, and provides easy way to make a dark mode versi
 2. Add Blinds to your HTML through the script tag. Do this preferably just before the closing body tag. The blinds script must be loaded before your script.js (can be named anything really):
 
     ```
-    <script src="https://cdn.jsdelivr.net/gh/Ikennaf1/blinds@0.6.1/blinds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Ikennaf1/blinds@0.6.1/dist/blinds.min.js"></script>
     <script src="script.js"></script>
     </body>    
     ```

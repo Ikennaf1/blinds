@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.6.2] - 2023-05-24
+### Fixed
+- Hook: `activateDarkMode`
+
 ## [v0.6.0] - 2023-05-24
 ### Changed
 - Hooks: `setOnToggle`, `setOnToggleDark`, `setOnToggleNormal` now `onToggle`, `onToggleDark`, `onToggleNormal`

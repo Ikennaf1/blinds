@@ -55,7 +55,7 @@ Blinds is accessible, intuitive, and provides easy way to make a dark mode versi
 2. Add Blinds to your HTML through the script tag. Do this preferably just before the closing body tag. The blinds script must be loaded before your script.js (can be named anything really):
 
     ```
-    <script src="https://cdn.jsdelivr.net/gh/Ikennaf1/blinds@0.6.1/dist/blinds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Ikennaf1/blinds@latest/dist/blinds.min.js"></script>
     <script src="script.js"></script>
     </body>    
     ```
@@ -78,4 +78,4 @@ That's it, you have successfully installed dark mode on your website. Go ahead a
 
 ## License
 
-Blinds is open-sourced software licensed under the [GNU General Public License version 3](https://opensource.org/license/gpl-3-0/).
+Blinds is open-sourced software licensed under the [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).

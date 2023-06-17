@@ -1,6 +1,6 @@
 {
   "name": "blinds",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A dark mode module for javascript",
   "main": "blinds.min.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "mode"
   ],
   "author": "Ikenna Isiogu",
-  "license": "MIT",
+  "license": "GPLv2",
   "bugs": {
     "url": "https://github.com/Ikennaf1/blinds/issues"
   },

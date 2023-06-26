@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.6.6] - 2023-06-26
+### Fixed
+- Hook: `useDefaultIcons` - Fixed unpredective behavior of the icons by adding getIcons hook
+
 ## [v0.6.3] - 2023-06-26
 ### Fixed
 - Hook: `useDefaultIcons` - Fixed unpredective behavior of the icons by adding useDefaultIcons hook

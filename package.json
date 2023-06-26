@@ -1,6 +1,6 @@
 {
   "name": "blinds",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "A dark mode module for javascript",
   "main": "blinds.min.js",
   "scripts": {
